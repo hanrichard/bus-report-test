@@ -1,0 +1,9 @@
+.card {
+    background-color: #cecece;
+    box-shadow: 0 0 2.4rem 0 rgb(0 0 0 / 10%);
+    padding: 1.8rem;
+}
+
+.card--rounded {
+    border-radius: .6rem;
+}
