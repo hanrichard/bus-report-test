@@ -18,4 +18,6 @@ export const TextWrapper = styled.span`
   }
 `;
 
-export const ReportWrapper = styled.div``
+export const ReportTableWrapper = styled.div`
+  margin-bottom: 30px;
+`
