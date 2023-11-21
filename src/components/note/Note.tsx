@@ -3,7 +3,7 @@ import { Button, Form, Input } from 'antd';
 
 const { TextArea } = Input;
 
-export const Note = ({ organisation }: any) => {
+export const Note = ({ organisation }: { organisation: string }) => {
   const [isSubmitted, setSubmitted] = useState(false);
   const [notevalue, setNoteValue] = useState('');
 
