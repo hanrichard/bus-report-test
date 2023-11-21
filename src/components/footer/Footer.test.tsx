@@ -8,7 +8,7 @@ describe('Footer', () => {
   test('renders footer', () => {
     const { getByText } = render(<Footer />);
 
-    const footerElement = getByText(/footer/i);
+    const footerElement = getByText(/Transport for NSW/i);
     expect(footerElement).toBeInTheDocument();
   });
 })

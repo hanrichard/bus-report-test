@@ -6,9 +6,9 @@ import { Header } from './Header';
 
 describe('Header', () => {
   test('renders Header', () => {
-    const { getByText } = render(<Header />);
+    const { getByAltText } = render(<Header />);
 
-    const headerElement = getByText(/header/i);
+    const headerElement = getByAltText(/transportnsw.info/i);
     expect(headerElement).toBeInTheDocument();
   });
 })

@@ -1,7 +1,9 @@
+import Logo from './image.svg'
+
 export const Header = () => {
   return (
     <div>
-      this is Header
+      <img src={Logo} height="61" width="260" alt="transportnsw.info" />
     </div>
   )
 }
