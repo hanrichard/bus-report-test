@@ -1,13 +1,13 @@
-import { TextWrapper } from './ReportStatus.styled'
+import { ReportStatusWrapper } from './ReportStatus.styled'
 
 export const ReportStatus = ({ status }: any) => {
   switch (true) {
     case status > 100:
-      return <TextWrapper className="isLate">Late</TextWrapper>
+      return <ReportStatusWrapper className="isLate">Late</ReportStatusWrapper>
     case status < 100 && status > 0:
-      return <TextWrapper className="isOnTime">On Time</TextWrapper>
+      return <ReportStatusWrapper className="isOnTime">On Time</ReportStatusWrapper>
     case status < 0:
-      return <TextWrapper className="isEarly">Early</TextWrapper>
+      return <ReportStatusWrapper className="isEarly">Early</ReportStatusWrapper>
     default:
       return <></>
   }

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const TextWrapper = styled.span`
+export const ReportStatusWrapper = styled.span`
   &.isEarly {
     color: red
   }
