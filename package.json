@@ -81,6 +81,8 @@
       "!src/test/**/*",
       "!src/stories/*",
       "!src/index.tsx",
+      "!src/App.tsx",
+      "!src/main.tsx",
       "!src/**/*.{story,stories}.{js,jsx,ts,tsx}"
     ],
     "transform": {

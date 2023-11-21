@@ -23,7 +23,7 @@ export const Home = () => {
 
   const items = data.map((report: ReportProps, index: number) => {
     return {
-      label: <Title style={{ margin: 0 }} level={3}>{report.organisation + "-" + report.date}</Title>,
+      label: <Title style={{ margin: 0 }} level={3}>{report.organisation + " - " + report.date}</Title>,
       children: <Report key={index} {...report} />
     };
   })
