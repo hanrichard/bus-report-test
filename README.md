@@ -12,7 +12,7 @@ Client provides the front-end to view bus reporrt from json
 
 React, React-query, React hooks, Typescript, ES6, storybook, style-component, ant design and scss, etc
 
-### To run the App
+### How to run the App
 
 - Go to root folder
 
@@ -47,7 +47,6 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
   - Table
 
   - Spin
-    
   - Accordion
 
   - Typography
