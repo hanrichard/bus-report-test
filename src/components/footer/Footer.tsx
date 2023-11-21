@@ -1,8 +1,11 @@
+import { Typography } from 'antd';
+const { Paragraph } = Typography;
+
 export const Footer = () => {
   return (
-    <div>
+    <Paragraph>
       © Transport for NSW
-    </div>
+    </Paragraph>
   )
 }
 
