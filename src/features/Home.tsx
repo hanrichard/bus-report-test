@@ -1,7 +1,8 @@
-import { Collapse } from 'antd';
+import { Collapse, Typography } from 'antd';
+
 import busData from "../data/bus-services-data.json";
 import { Report } from '../components/report/Report';
-
+import { TextWrapper } from './Home.styled';
 
 export interface ReportProps {
   organisation: string;
@@ -15,6 +16,8 @@ export interface BusDataDetails {
   deviationFromTimetable: number | null;
 }
 
+const { Title } = Typography;
+
 export const Home = () => {
   const data = busData.data;
 
@@ -26,10 +29,10 @@ export const Home = () => {
   })
 
   return (
-    <div>
-      <h1>Bus Reports</h1>
+    <TextWrapper>
+      <Title>Bus Reports</Title>
       <Collapse items={items} bordered={false} />
-    </div>
+    </TextWrapper>
   )
 }
 
