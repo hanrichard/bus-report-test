@@ -8,14 +8,14 @@ type FieldType = {
 };
 
 export const Note = () => {
-  const [submitted, isSubmitted] = useState(false);
+  const [isSubmitted, setSubmitted] = useState(false);
   const [notevalue, setNoteValue] = useState('');
 
   const onFinish = (values: any) => {
-    values && isSubmitted(values.note)
+    values && setSubmitted(values.note)
   };
 
-  return submitted ? <p>{notevalue}</p> : <>
+  return isSubmitted ? <p>{notevalue}</p> : <>
     <Form
       name="basic"
       labelCol={{ span: 8 }}
