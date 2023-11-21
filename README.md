@@ -42,6 +42,16 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
 
 ### Assumptions
 
+- We should have a UI lib, so, in this case, the Ant design UI library [https://ant.design/](https://ant.design/) was used in this App, for example:
+
+  - Table
+
+  - Spin
+
+  - Accordion
+
+  - Typography
+
 - When we hit save notes button, the notes will be shown straigtaway and button will be hidden for now
 
 - If there will be no result, "No results" message will be shown
