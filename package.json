@@ -70,9 +70,6 @@
       "react-app/jest"
     ]
   },
-  "msw": {
-    "workerDirectory": "public"
-  },
   "jest": {
     "testEnvironment": "jsdom",
     "collectCoverageFrom": [
