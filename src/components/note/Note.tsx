@@ -11,7 +11,7 @@ export const Note = ({ organisation }: { organisation: string }) => {
     values && setSubmitted(true)
   };
 
-  return isSubmitted ? <p><b>Comment:</b> {notevalue}</p> : <>
+  return isSubmitted ? <p><b>Notes:</b> {notevalue}</p> : <>
     <Form
       name={organisation + "note"}
       labelCol={{ span: 8 }}
