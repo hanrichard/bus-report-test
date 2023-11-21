@@ -7,6 +7,6 @@ import App from './App';
 test('renders app', () => {
   const { getByText } = render(<App />);
 
-  const logoElement = getByText(/app/i);
+  const logoElement = getByText(/home/i);
   expect(logoElement).toBeInTheDocument();
 });

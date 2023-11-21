@@ -1,7 +1,8 @@
+import { Home } from '../src/features/Home'
 const App = () => {
   return (
     <>
-      this is app
+      <Home />
     </>
   )
 }
