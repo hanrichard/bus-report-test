@@ -1,5 +1,6 @@
 import { Table } from 'antd';
 import { ReportProps } from '../../features/Home'
+import { Note } from '../note/Note';
 
 export const columns = [
   {
@@ -26,6 +27,7 @@ export const Report = (reports: ReportProps) => {
   return (
     <div>
       <Table dataSource={reports.busData} rowKey="busId" columns={columns} pagination={false} />
+      <Note />
     </div>
   )
 }
