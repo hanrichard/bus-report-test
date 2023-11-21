@@ -1,9 +1,8 @@
 import { Table } from 'antd';
-
 import { ReportProps } from '../../features/Home'
 import { Note } from '../note/Note';
-import { ReportStatus } from '../reportStatus/ReportStatus';
 import { ReportTableWrapper } from './Report.styled';
+import { ReportStatus } from '../reportStatus/ReportStatus';
 
 const updateValue = (val: string | null) => {
   if (val !== null) {

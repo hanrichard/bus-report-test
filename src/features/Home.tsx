@@ -1,4 +1,4 @@
-import { Collapse, Spin,Typography } from 'antd';
+import { Collapse, Spin, Typography } from 'antd';
 
 import { getBusReports } from '../apis/getReports';
 import { Report } from '../components/report/Report';
