@@ -16,7 +16,7 @@ export const Note = ({ organisation }: { organisation: string }) => {
       name={organisation + "note"}
       labelCol={{ span: 8 }}
       wrapperCol={{ span: 16 }}
-      style={{ maxWidth: "100%" }}
+      style={{ width: "100%" }}
       onFinish={onFinish}
       autoComplete="off"
     >
