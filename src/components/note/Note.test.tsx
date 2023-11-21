@@ -7,7 +7,7 @@ import { Note } from './Note';
 describe('Note', () => {
   test('renders Note', async () => {
     const { queryByRole } = render(<Note />);
-    const button = await queryByRole('button', { name: 'Save Notes' });
+    const button = await queryByRole('button', { name: /Save Notes/i });
 
     expect(await button).toBeInTheDocument();
   });

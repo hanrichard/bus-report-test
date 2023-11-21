@@ -7,7 +7,7 @@ type FieldType = {
   note?: string;
 };
 
-export const Note = () => {
+export const Note = ({ organisation }: any) => {
   const [isSubmitted, setSubmitted] = useState(false);
   const [notevalue, setNoteValue] = useState('');
 
@@ -17,16 +17,16 @@ export const Note = () => {
 
   return isSubmitted ? <p>{notevalue}</p> : <>
     <Form
-      name="basic"
+      name={organisation + "note"}
       labelCol={{ span: 8 }}
       wrapperCol={{ span: 16 }}
       style={{ maxWidth: "100%" }}
       onFinish={onFinish}
       autoComplete="off"
     >
-      <Form.Item<FieldType>
+      <Form.Item
         label=""
-        name="note"
+        name={organisation + "note"}
       >
         <TextArea
           placeholder="Enter notes here"

@@ -1,8 +1,8 @@
 import { Table } from 'antd';
 import { ReportProps } from '../../features/Home'
 import { Note } from '../note/Note';
-import { TextWrapper, ReportWrapper } from './Report.styled';
-import { calStatus } from '../../utility/utility';
+import { ReportWrapper } from './Report.styled';
+import { ReportStatus } from '../reportStatus/ReportStatus';
 
 const updateValue = (val: string | null) => {
   if (val !== null) {
@@ -33,8 +33,8 @@ export const columns = [
   {
     title: 'Status',
     dataIndex: 'deviationFromTimetable',
-    render: (value: number) => {
-      return <TextWrapper className={calStatus(value)}>{value}</TextWrapper>
+    render: (value: number | null) => {
+      return value !== null ? <ReportStatus status={value} /> : <></>
     }
   }
 ];
@@ -43,7 +43,7 @@ export const Report = (reports: ReportProps) => {
   return (
     <ReportWrapper>
       <Table dataSource={reports.busData} rowKey="busId" columns={columns} pagination={false} />
-      <Note />
+      <Note organisation={reports.organisation} />
     </ReportWrapper>
   )
 }

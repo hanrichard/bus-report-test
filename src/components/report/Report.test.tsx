@@ -22,11 +22,9 @@ describe('Report', () => {
     const busId = getByText(/94811/i);
     const routeVariantFirst = getByText(/664/i);
     const routeVariantRest = getByText(/2 1/i);
-    const deviationFromTimetable = getByText(/164/i);
     expect(busId).toBeInTheDocument();
     expect(routeVariantFirst).toBeInTheDocument();
     expect(routeVariantRest).toBeInTheDocument();
-    expect(deviationFromTimetable).toBeInTheDocument();
   });
 
 
