@@ -2,7 +2,7 @@
 
 ### Description
 
-Using React and Typescript, to create a bus report page that looks like the screenshot attached in bus-report-example.PNG.
+Using React and Typescript, to create a bus report page
 
 ### What's in the project
 
