@@ -10,7 +10,7 @@ Client provides the front-end to view bus reporrt from json
 
 ### Tech stacks
 
-React, Typescript, ES6, storybook, style-component, ant design and scss, etc
+React, React-query, React hooks, Typescript, ES6, storybook, style-component, ant design and scss, etc
 
 ### To run the App
 
@@ -34,8 +34,14 @@ React, Typescript, ES6, storybook, style-component, ant design and scss, etc
 
 - Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 
-### Assumptions:
+### Note:
 
 - You’ll need to have Node 18.18.0 or Node 18.18.0 later version on your local development machine (but it’s not required on the server).
 
-- You’ll need to have Chome version 119 or later version on your local development machine .
+- You’ll need to have Chome version 119 or later version on your local development machine.
+
+### Assumptions
+
+- When we hit save notes button, the notes will be shown straigtaway and button will be hidden for now
+
+- If there will be no result, "No results" message will be shown

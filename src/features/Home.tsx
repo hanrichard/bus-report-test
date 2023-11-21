@@ -31,7 +31,7 @@ export const Home = () => {
   return (
     <HomeWrapper>
       <Title>Bus Reports</Title>
-      <Collapse items={items} bordered={false} />
+      {data?.length > 0 ? <Collapse items={items} bordered={false} /> : <Title level={3}>No results</Title>}
       <Spin spinning={isLoading} fullscreen size="large" />
     </HomeWrapper>
   )
