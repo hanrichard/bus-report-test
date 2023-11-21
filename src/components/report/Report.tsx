@@ -34,7 +34,7 @@ export const columns = [
     title: 'Status',
     dataIndex: 'deviationFromTimetable',
     render: (value: number | null) => {
-      return value !== null ? <ReportStatus deviationFromTimetable={value} /> : <>Unkown</>
+      return value ? <ReportStatus deviationFromTimetable={value} /> : <>Unkown</>
     }
   }
 ];
