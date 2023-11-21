@@ -6,8 +6,22 @@
 import '@testing-library/jest-dom';
 import { configure as configureRtl } from '@testing-library/react';
 import 'jest-styled-components';
+import { setLogger } from 'react-query';
+import { setupServer } from 'msw/node';
+import { handlers } from './mocks';
+
+export const mswServer = setupServer(...handlers)
 
 configureRtl({ defaultHidden: true });
+
+afterEach(() => mswServer.resetHandlers);
+afterAll(() => mswServer.close);
+
+setLogger({
+  log: () => void {},
+  warn: () => void {},
+  error: () => void {}
+});
 
 jest.setTimeout(20000);
 
