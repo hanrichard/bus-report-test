@@ -15,18 +15,23 @@ React, Typescript, ES6, storybook, style-component, ant design and scss, etc
 ### To run the App
 
 - Go to root folder
+
 - Run `yarn install`
+
 - Run `yarn dev`
+
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### How to test:
 
 - Go to root folder
+
 - Run `yarn test`
 
 ### How to run storybook
 
 - Run `yarn storybook`
+
 - Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 
 ### Assumptions:
