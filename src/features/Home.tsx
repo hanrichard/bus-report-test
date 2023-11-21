@@ -2,7 +2,7 @@ import { Collapse, Typography } from 'antd';
 
 import busData from "../data/bus-services-data.json";
 import { Report } from '../components/report/Report';
-import { TextWrapper } from './Home.styled';
+import { HomeWrapper } from './Home.styled';
 
 export interface ReportProps {
   organisation: string;
@@ -23,16 +23,16 @@ export const Home = () => {
 
   const items = data.map((report: ReportProps, index: number) => {
     return {
-      label: report.organisation + "-" + report.date,
+      label: <Title style={{ margin: 0 }} level={3}>{report.organisation + "-" + report.date}</Title>,
       children: <Report key={index} {...report} />
     };
   })
 
   return (
-    <TextWrapper>
+    <HomeWrapper>
       <Title>Bus Reports</Title>
       <Collapse items={items} bordered={false} />
-    </TextWrapper>
+    </HomeWrapper>
   )
 }
 

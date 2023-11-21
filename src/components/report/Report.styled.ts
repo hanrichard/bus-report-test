@@ -17,3 +17,5 @@ export const TextWrapper = styled.span`
     color: yellow
   }
 `;
+
+export const ReportWrapper = styled.div``

@@ -1,7 +1,7 @@
 import { Table } from 'antd';
 import { ReportProps } from '../../features/Home'
 import { Note } from '../note/Note';
-import { TextWrapper } from './Report.styled';
+import { TextWrapper, ReportWrapper } from './Report.styled';
 import { calStatus } from '../../utility/utility';
 
 const updateValue = (val: string | null) => {
@@ -41,9 +41,9 @@ export const columns = [
 
 export const Report = (reports: ReportProps) => {
   return (
-    <div>
+    <ReportWrapper>
       <Table dataSource={reports.busData} rowKey="busId" columns={columns} pagination={false} />
       <Note />
-    </div>
+    </ReportWrapper>
   )
 }
