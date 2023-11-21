@@ -20,7 +20,7 @@ const updateValue = (val: string | null) => {
 
 export const columns = [
   {
-    title: "Bus Id",
+    title: "Bus ID",
     dataIndex: "busId"
   },
   {
