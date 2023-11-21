@@ -12,10 +12,10 @@ export const Note = ({ organisation }: any) => {
   const [notevalue, setNoteValue] = useState('');
 
   const onFinish = (values: any) => {
-    values && setSubmitted(values.note)
+    values && setSubmitted(true)
   };
 
-  return isSubmitted ? <p>{notevalue}</p> : <>
+  return isSubmitted ? <p><b>Comment:</b> {notevalue}</p> : <>
     <Form
       name={organisation + "note"}
       labelCol={{ span: 8 }}
