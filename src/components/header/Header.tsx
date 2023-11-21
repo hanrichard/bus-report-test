@@ -1,4 +1,4 @@
-import Logo from './image.svg'
+import Logo from './image.svg';
 
 export const Header = () => {
   return (
