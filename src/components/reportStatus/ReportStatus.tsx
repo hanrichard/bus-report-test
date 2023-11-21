@@ -1,6 +1,6 @@
 import { ReportStatusWrapper } from './ReportStatus.styled'
 
-export const ReportStatus = ({ status }: any) => {
+export const ReportStatus = ({ status }: number) => {
   switch (true) {
     case status > 100:
       return <ReportStatusWrapper className="isLate">Late</ReportStatusWrapper>

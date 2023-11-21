@@ -42,7 +42,9 @@ export const columns = [
 export const Report = (reports: ReportProps) => {
   return (
     <>
-      <ReportTableWrapper><Table dataSource={reports.busData} rowKey="busId" columns={columns} pagination={false} /></ReportTableWrapper>
+      <ReportTableWrapper>
+        <Table dataSource={reports.busData} rowKey="busId" columns={columns} pagination={false} />
+      </ReportTableWrapper>
       <Note organisation={reports.organisation} />
     </>
   )
