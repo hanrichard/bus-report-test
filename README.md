@@ -42,11 +42,12 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
 
 ### Assumptions
 
-- We should have a UI lib, so, in this case, the Ant design UI library [https://ant.design/](https://ant.design/) was used in this App, for example:
+- We should have a UI lib, so, in this case, the Ant design UI library [https://ant.design/](https://ant.design/) was used in this App, some components have been used from the lib, for example:
 
   - Table
 
   - Spin
+
   - Accordion
 
   - Typography
