@@ -8,10 +8,7 @@ const updateValue = (val: string | null) => {
   if (val !== null) {
     const firstThree = val.indexOf(" ");
 
-    return <>
-      <b>
-        {val.substring(0, firstThree)}
-      </b>
+    return <><b>{val.substring(0, firstThree)}</b>
       {val.substring(firstThree)}
     </>
   }

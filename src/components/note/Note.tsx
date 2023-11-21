@@ -32,7 +32,7 @@ export const Note = ({ organisation }: { organisation: string }) => {
       <Form.Item>
         <Button type="primary" htmlType="submit" disabled={!notevalue}>
           Save Notes
-      </Button>
+        </Button>
       </Form.Item>
     </Form>
   </>
