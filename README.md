@@ -36,7 +36,7 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
 
 ### Note:
 
-- You’ll need to have Node 18.18.0 or Node 18.18.0, a later version on your local development machine (but it’s not required on the server).
+- You’ll need to have Node 18.18.0 or a later version on your local development machine (but it’s not required on the server).
 
 - You’ll need to have Chome version 119 or the later version on your local development machine.
 
