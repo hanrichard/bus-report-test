@@ -57,3 +57,7 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
 - If there will be no result, "No results" message will be shown
 
 - Currently, we fetch the data from json file stored in the public folder, however, in the prod env, we need to fetch from real api
+
+### screenshots
+
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
