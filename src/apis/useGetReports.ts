@@ -6,6 +6,6 @@ const fetch = async () => {
   return data.data;
 }
 
-export const getBusReports = () => {
-    return useQuery(['BUSREPORTS'], fetch)
+export const useGetBusReports = () => {
+  return useQuery(['BUSREPORTS'], fetch)
 }

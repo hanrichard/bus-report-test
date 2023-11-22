@@ -1,6 +1,6 @@
 import { Collapse, Spin, Typography } from 'antd';
 
-import { getBusReports } from '../apis/getReports';
+import { useGetBusReports } from '../apis/useGetReports';
 import { Report } from '../components/report/Report';
 import { HomeWrapper } from './Home.styled';
 
@@ -19,7 +19,7 @@ export interface BusDataDetails {
 const { Title } = Typography;
 
 export const Home = () => {
-  const { data, isLoading } = getBusReports();
+  const { data, isLoading, isError } = useGetBusReports();
 
   const items = data?.map((report: ReportProps, index: number) => {
     return {
@@ -31,7 +31,11 @@ export const Home = () => {
   return (
     <HomeWrapper>
       <Title>Bus Reports</Title>
-      {data?.length > 0 ? <Collapse items={items} bordered={false} /> : <Title level={3}>No results</Title>}
+      {isError ? <Title level={3}>Something is wrong, please refresh!</Title> :
+        data?.length > 0 ?
+          <Collapse items={items} bordered={false} /> :
+          <Title level={3}>No results</Title>
+      }
       <Spin spinning={isLoading} fullscreen size="large" />
     </HomeWrapper>
   )
