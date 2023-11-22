@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Button, Form, Input } from 'antd';
+import { Button, Form, Input, Typography } from 'antd';
 
 const { TextArea } = Input;
+const { Paragraph } = Typography;
 
 export const Note = ({ organisation }: { organisation: string }) => {
   const [isSubmitted, setSubmitted] = useState(false);
@@ -11,7 +12,7 @@ export const Note = ({ organisation }: { organisation: string }) => {
     values && setSubmitted(true)
   };
 
-  return isSubmitted ? <p><b>Notes:</b> {notevalue}</p> : <>
+  return isSubmitted ? <Paragraph><b>Notes:</b> {notevalue}</Paragraph> : <>
     <Form
       name={organisation + "note"}
       labelCol={{ span: 8 }}
