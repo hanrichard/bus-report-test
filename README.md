@@ -52,11 +52,13 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
 
   - Typography
 
-- When we hit the save notes button, the notes will be shown straightaway and the button will be hidden for now.
+- When we hit the save notes button, the notes will be shown straightaway and the button will be hidden for now,
 
-- If there are no results, a "No results" message will be shown.
+- If there are no results, a "No results" message will be shown,
 
-- Currently, we fetch the data from JSON format file stored in the public folder. However, in the prod env, we need to fetch from the real api endpoint.
+- Currently, we fetch the data from JSON format file stored in the public folder. However, in the prod env, we need to fetch from the real api endpoint,
+
+- We could add pagination and sorting features to the table and add Google analysis.
 
 ### Screenshots
 
