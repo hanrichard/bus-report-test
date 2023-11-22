@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
 export const HomeWrapper = styled.div`
-  margin: 50px auto;
+  background-color: #f8f9fa;
+  padding: 20px 20px 20px;
+  margin: 20px 0;
+`
+
+export const HomeWrapperInner = styled.div`
+  margin: 0 auto;
   max-width: 800px;
   min-height: 600px;
 

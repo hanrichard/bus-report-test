@@ -1,11 +1,15 @@
 import { Typography } from 'antd';
+import { Wrapper } from '../header/Header.styled';
+
 const { Paragraph } = Typography;
 
 export const Footer = () => {
   return (
-    <Paragraph>
-      © Transport for NSW
+    <Wrapper>
+      <Paragraph>
+        © Transport for NSW
     </Paragraph>
+    </Wrapper>
   )
 }
 

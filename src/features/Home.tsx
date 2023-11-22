@@ -2,7 +2,7 @@ import { Collapse, Spin, Typography } from 'antd';
 
 import { useGetBusReports } from '../apis/useGetReports';
 import { Report } from '../components/report/Report';
-import { HomeWrapper } from './Home.styled';
+import { HomeWrapper, HomeWrapperInner } from './Home.styled';
 
 export interface ReportProps {
   organisation: string;
@@ -30,13 +30,15 @@ export const Home = () => {
 
   return (
     <HomeWrapper>
-      <Title>Bus Reports</Title>
-      {isError ? <Title level={3}>Something is wrong, please refresh!</Title> :
-        data?.length > 0 ?
-          <Collapse items={items} bordered={false} /> :
-          <Title level={3}>No results</Title>
-      }
-      <Spin spinning={isLoading} fullscreen size="large" />
+      <HomeWrapperInner>
+        <Title>Bus Reports</Title>
+        {isError ? <Title style={{ margin: 0 }} level={3}>Something is wrong, please refresh!</Title> :
+          data?.length > 0 ?
+            <Collapse items={items} bordered={false} /> :
+            <Title level={3}>No results</Title>
+        }
+        <Spin spinning={isLoading} fullscreen size="large" />
+      </HomeWrapperInner>
     </HomeWrapper>
   )
 }
