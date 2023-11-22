@@ -60,4 +60,4 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
 
 ### screenshots
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/hanrichard/bus-report-test/blob/master/screenshot.png?raw=true)
