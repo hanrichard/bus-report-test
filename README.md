@@ -61,7 +61,9 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
 ### Screenshots
 
 - Desktop view
-  ![alt text](https://github.com/hanrichard/bus-report-test/blob/master/screenshot.png?raw=true)
+
+  - ![alt text](https://github.com/hanrichard/bus-report-test/blob/master/screenshot.png?raw=true)
 
 - Mobile view
-  ![alt text](https://github.com/hanrichard/bus-report-test/blob/master/screenshot-mobile.png?raw=true)
+
+  - ![alt text](https://github.com/hanrichard/bus-report-test/blob/master/screenshot-mobile.png?raw=true)
