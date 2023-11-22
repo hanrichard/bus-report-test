@@ -55,3 +55,5 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
 - When we hit save notes button, the notes will be shown straigtaway and button will be hidden for now
 
 - If there will be no result, "No results" message will be shown
+
+- Currently, we fetch the data from json file stored in the public folder, however, in the prod env, we need to fetch from real api
