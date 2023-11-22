@@ -52,6 +52,8 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
 
   - Typography
 
+- Once we add something to the note input, then the save notes button will be able to use,
+
 - When we hit the save notes button, the notes will be shown straightaway and the button will be hidden for now,
 
 - If there are no results, a "No results" message will be shown,
