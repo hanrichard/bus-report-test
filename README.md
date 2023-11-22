@@ -2,11 +2,11 @@
 
 ### Description
 
-Using React and Typescript, to create a bus report page
+Using React and Typescript, to create a bus report page to show the buses' status.
 
 ### What's in the project
 
-Client provides the front-end to view bus reporrt from json
+Client provides the front-end app to view bus report data from the JSON file
 
 ### Tech stacks
 
@@ -14,7 +14,7 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
 
 ### How to run the App
 
-- Go to root folder
+- Go to the root folder
 
 - Run `yarn install`
 
@@ -24,11 +24,11 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
 
 ### How to test:
 
-- Go to root folder
+- Go to the root folder
 
 - Run `yarn test`
 
-### How to run storybook
+### How to run the storybook
 
 - Run `yarn storybook`
 
@@ -36,13 +36,13 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
 
 ### Note:
 
-- You’ll need to have Node 18.18.0 or Node 18.18.0 later version on your local development machine (but it’s not required on the server).
+- You’ll need to have Node 18.18.0 or Node 18.18.0, a later version on your local development machine (but it’s not required on the server).
 
-- You’ll need to have Chome version 119 or later version on your local development machine.
+- You’ll need to have Chome version 119 or the later version on your local development machine.
 
 ### Assumptions
 
-- We should have a UI lib, so, in this case, the Ant design UI library [https://ant.design/](https://ant.design/) was used in this App, some components have been used from the lib, for example:
+- We should have a UI lib, so, in this case, the Ant design UI library [https://ant.design/](https://ant.design/) was used in this App. Some components have been used by the library, for example:
 
   - Table
 
@@ -52,11 +52,11 @@ React, React-query, React hooks, Typescript, ES6, storybook, style-component, an
 
   - Typography
 
-- When we hit save notes button, the notes will be shown straigtaway and button will be hidden for now
+- When we hit the save notes button, the notes will be shown straightaway and the button will be hidden for now.
 
-- If there will be no result, "No results" message will be shown
+- If there are no results, a "No results" message will be shown.
 
-- Currently, we fetch the data from json file stored in the public folder, however, in the prod env, we need to fetch from real api
+- Currently, we fetch the data from JSON format file stored in the public folder. However, in the prod env, we need to fetch from the real api endpoint.
 
 ### Screenshots
 
